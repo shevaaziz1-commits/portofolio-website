@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+
+    <title>Sheva Aziz | My Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -13,6 +21,7 @@
 <nav>
     <a href="#hero">Beranda</a>
     <a href="#about">Tentang Saya</a>
+    <a href="#project">Proyek</a>
     <a href="#skill">Skill</a>
     <a href="#contact">Kontak</a>
 </nav>
@@ -65,6 +74,42 @@
         di bidang teknologi informasi.
     </p>
         </section>
+
+<section id="project">
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>
+                Website portofolio pribadi menggunakan
+                HTML dan CSS untuk memperkenalkan diri.
+            </p>
+            <a href="#hero">Lihat Proyek</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Task Management</h3>
+            <p>
+                Konsep website untuk membantu pengguna
+                mengatur tugas dan aktivitas harian.
+            </p>
+            <a href="#project">Lihat Proyek</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Student Dashboard</h3>
+            <p>
+                Konsep dashboard untuk menampilkan
+                informasi akademik dan jadwal mahasiswa.
+            </p>
+            <a href="#project">Lihat Proyek</a>
+        </div>
+
+    </div>
+</section>
+
 
         <section id="skill">
             <h2>My Skills</h2>
@@ -135,8 +180,18 @@
     </main>
 
     <footer>
-<p>Copyright &copy; 2026 Sheva Aziz</p>
+     <p>Copyright &copy; 2026 Sheva Aziz</p>
     </footer>
+<script>
+    const form = document.querySelector("form");
 
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        alert("Pesan berhasil dikirim!");
+
+        form.reset();
+    });
+</script>
 </body>
 </html>
